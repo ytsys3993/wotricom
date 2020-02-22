@@ -1,0 +1,29 @@
+
+<mat-card>
+  <mat-card-content>
+    <form class="example-form">
+
+      <mat-label>会場名</mat-label><br>
+      <mat-form-field class="example-full-width">
+        <input matInput value="Sushi">
+        <mat-hint><mat-icon>info</mat-icon>〇文字以内</mat-hint>
+      </mat-form-field>
+      <br><br>
+
+      <mat-label>エリア</mat-label><br>
+      <mat-form-field>
+        <mat-select>
+          <mat-option *ngFor="let area of areas" [value]="area.code">
+            {{area.name}}
+          </mat-option>
+        </mat-select>
+        <mat-hint><mat-icon>info</mat-icon>〇文字以内</mat-hint>
+      </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button color="primary">保存</button>
+
+  </mat-card-content>
+</mat-card>
+

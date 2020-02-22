@@ -10,6 +10,8 @@ import { map } from 'rxjs/operators';
 })
 export class SidenaviComponent {
 
+  visbleMode = "会場";
+
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
@@ -17,4 +19,12 @@ export class SidenaviComponent {
 
   constructor(private breakpointObserver: BreakpointObserver) {}
 
+  clickLink(mode){
+    if(mode == 1){
+      this.visbleMode = "";
+    }
+    if(mode == 2){
+      this.visbleMode = "会場";
+    }
+  }
 }

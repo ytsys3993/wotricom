@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavimenuComponent } from './navimenu.component';
+import { PlaceComponent } from './place.component';
 
-describe('NavimenuComponent', () => {
-  let component: NavimenuComponent;
-  let fixture: ComponentFixture<NavimenuComponent>;
+describe('PlaceComponent', () => {
+  let component: PlaceComponent;
+  let fixture: ComponentFixture<PlaceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavimenuComponent ]
+      declarations: [ PlaceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NavimenuComponent);
+    fixture = TestBed.createComponent(PlaceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
